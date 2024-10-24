@@ -1,0 +1,147 @@
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  background-color: #1e3a5f; /* Deep blue background color to match theme */
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.loginlogin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: auto;
+}
+
+input {
+  margin: 15px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f0f4f8; /* Light blue/gray background inside inputs */
+  color: #0f223d; /* Dark blue text for inputs */
+  cursor: text;
+}
+
+/* Button styles */
+button {
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #57a6ff; /* Bright blue button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3d8ad6; /* Slightly darker blue on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Image styles */
+.loginlogin img {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  margin-right: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+}
+
+@media (max-width: 768px) {
+  .loginlogin {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loginlogin img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+/* Overall container for login */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Adds space between image and form */
+  width: 100%;
+  height: 100vh;
+}
+
+/* Image styling */
+.login-image {
+  width: 300px; /* Adjust the size of the image */
+  height: auto;
+}
+
+/* Form container with vertical layout for form and 'For Admin' */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the form itself */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 'For Admin' text with custom styling */
+.admin-link {
+  cursor: pointer;
+  color: #ff5733; /* Custom color for the admin text */
+  font-weight: bold;
+  margin-top: 20px; /* Adds space between form and 'For Admin' text */
+  text-decoration: none;
+}
+
+.admin-link:hover {
+  color: #c70039; /* Darker color on hover */
+  text-decoration: underline;
+}
