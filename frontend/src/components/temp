@@ -1,0 +1,26 @@
+                      className="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#293038] h-14 p-4 text-base font-normal leading-normal"
+                        name="semester"
+                        value={formData.semester}
+                        onChange={handleInputChange}
+                      >
+                        <option value="" disabled>Select Semester</option>
+                        {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
+                          <option key={sem} value={sem}>{sem}</option>
+                        ))}
+                      </select>
+                    </label>
+                  </div>
+      
+                  <div className="flex px-4 py-3 justify-start">
+                    <button
+                      className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                      onClick={handleSave}
+                    >
+                      <span className="truncate">Save</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>))
+        }
